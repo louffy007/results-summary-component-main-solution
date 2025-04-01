@@ -162,6 +162,9 @@ main button {
     width: 180px;
     height: 180px;
   }
+  .cercle .the-big-num {
+    font-size: 4rem;
+  }
   header .great {
     margin-bottom: 16px;
   }
@@ -174,5 +177,12 @@ main button {
   main button {
     margin-top: 8px;
     margin-bottom: 32px;
+  }
+  main button:hover {
+    background: linear-gradient(
+      to bottom,
+      var(--bg-light-slate-blue),
+      var(--bg-light-royal-blue)
+    );
   }
 }
