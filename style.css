@@ -29,6 +29,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Hanken Grotesk", sans-serif;
+  background-color: var(--Pale-blue);
 }
 header {
   display: flex;
@@ -135,4 +136,43 @@ main button {
   font-weight: 700;
   background-color: var(--dark-gray-blue);
   color: var(--white);
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 32px;
+  }
+  header {
+    width: 250px;
+    height: 400px;
+    padding: 8px 40px 16px 40px;
+    border-radius: 32px 32px 32px 32px;
+  }
+  .cercle {
+    width: 180px;
+    height: 180px;
+  }
+  header .great {
+    margin-bottom: 16px;
+  }
+  main {
+    width: 400px;
+  }
+  main .block {
+    margin-bottom: 16px;
+  }
+  main button {
+    margin-top: 8px;
+    margin-bottom: 32px;
+  }
 }
