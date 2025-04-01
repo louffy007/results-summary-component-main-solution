@@ -16,7 +16,14 @@
   --light-lavender: hsl(241, 100%, 89%);
   --dark-gray-blue: hsl(224, 30%, 27%);
 }
-
+/* utilities */
+.lighter {
+  color: var(--light-lavender);
+}
+.bold {
+  font-weight: 600;
+  color: var(--dark-gray-blue);
+}
 body {
   box-sizing: border-box;
   padding: 0;
@@ -85,9 +92,33 @@ main .block {
   display: flex;
   justify-content: space-between;
   margin-bottom: 8px;
-  background-color: var(--light-red);
   padding: 0 16px 0 16px;
   border-radius: 8px;
+}
+.Reaction {
+  background-color: hsla(0, 100%, 67%, 6%);
+}
+.Reaction .title {
+  color: var(--light-red);
+  font-weight: 600;
+}
+.Memory {
+  background-color: hsla(39, 100%, 56%, 6%);
+}
+.Memory .title {
+  color: var(--orangey-yellow);
+}
+.Verbal {
+  background-color: hsla(166, 100%, 37%, 6%);
+}
+.Verbal .title {
+  color: var(--green-teal);
+}
+.Visual {
+  background-color: hsla(234, 85%, 45%, 6%);
+}
+.Visual .title {
+  color: var(--colbalt-blue);
 }
 .img-title {
   display: flex;
@@ -95,10 +126,13 @@ main .block {
   gap: 8px;
 }
 main button {
+  font-family: "Hanken Grotesk", sans-serif;
   cursor: pointer;
   width: 100%;
   padding: 16px 32px 16px 32px;
-  background-color: red;
   border: none;
   border-radius: 50px;
+  font-weight: 700;
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
 }
